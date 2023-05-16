@@ -35,9 +35,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>sqlite</ProjectName>
-    <ProjectGuid>{424F72D6-053A-41C5-BE03-3B0BD535F1EB}</ProjectGuid>
-    <RootNamespace>sqlite</RootNamespace>
+    <ProjectName>openddlparser</ProjectName>
+    <ProjectGuid>{20904BC8-943E-4397-98E0-35F98F4789B9}</ProjectGuid>
+    <RootNamespace>openddlparser</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -803,11 +803,15 @@
     <ClInclude Include="sqlite3ext.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="sqlite.def" />
+    <None Include="openddlparser.def" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sqlite3.c" />
-    <ClCompile Include="version.c" />
+    <ClCompile Include="code\DDLNode.cpp" />
+    <ClCompile Include="code\OpenDDLCommon.cpp" />
+    <ClCompile Include="code\OpenDDLExport.cpp" />
+    <ClCompile Include="code\OpenDDLParser.cpp" />
+    <ClCompile Include="code\OpenDDLStream.cpp" />
+    <ClCompile Include="code\Value.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
